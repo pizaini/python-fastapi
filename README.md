@@ -1,6 +1,24 @@
 # Python with FastAPI
 Python with FastAPI simple example
 
+# Clone this project
+Clone this project using your text editor
+
+# Init project
+`python -m venv .venv`
+
+## VENV
+For Mac 
+
+`source .venv/bin/act# Python with FastAPI
+Python with FastAPI simple example
+
+# Clone this project
+Clone this project using your text editor
+
+# Init project
+`python -m venv .venv`
+
 ## VENV
 For Mac 
 
@@ -12,13 +30,63 @@ For Windows
 
 Deactive `deactivate`
 
+## Install requirements
+`pip install -r requirements.txt`
+
+or
+
+`pip3 install -r requirements.txt`
+
+
 ## Run
 `uvicorn src.main:app --reload --host 0.0.0.0 --port 8000`
 
-## Migration
+## Run migration
+`alembic upgrade head`
+
+## Check endpoint
+`localhost:8000` and `localhost:8000/api/v1/student`
+
+
+## Optional
+### Crate Migration
 `alembic revision --autogenerate -m "Messagehere"`
+
+
 
 ### Reset database
 `alembic downgrade base`
+ivate`
 
+For Windows 
+
+`.venv\Scripts\activate`
+
+Deactive `deactivate`
+
+## Install requirements
+`pip install -r requirements.txt`
+
+or
+
+`pip3 install -r requirements.txt`
+
+
+## Run
+`uvicorn src.main:app --reload --host 0.0.0.0 --port 8000`
+
+## Run migration
 `alembic upgrade head`
+
+## Check endpoint
+`localhost:8000` and `localhost:8000/api/v1/student`
+
+
+## Optional
+### Crate Migration
+`alembic revision --autogenerate -m "Messagehere"`
+
+
+
+### Reset database
+`alembic downgrade base`
