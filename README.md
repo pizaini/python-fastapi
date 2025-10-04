@@ -25,12 +25,11 @@ or
 
 `pip3 install -r requirements.txt`
 
+## Run migration
+`alembic upgrade head`
 
 ## Run
 `uvicorn src.main:app --reload --host 0.0.0.0 --port 8000`
-
-## Run migration
-`alembic upgrade head`
 
 ## Check endpoint
 `localhost:8000` and `localhost:8000/api/v1/student`
@@ -39,42 +38,6 @@ or
 ## Optional
 ### Crate Migration
 `alembic revision --autogenerate -m "Messagehere"`
-
-
-
-### Reset database
-`alembic downgrade base`
-ivate`
-
-For Windows 
-
-`.venv\Scripts\activate`
-
-Deactive `deactivate`
-
-## Install requirements
-`pip install -r requirements.txt`
-
-or
-
-`pip3 install -r requirements.txt`
-
-
-## Run
-`uvicorn src.main:app --reload --host 0.0.0.0 --port 8000`
-
-## Run migration
-`alembic upgrade head`
-
-## Check endpoint
-`localhost:8000` and `localhost:8000/api/v1/student`
-
-
-## Optional
-### Crate Migration
-`alembic revision --autogenerate -m "Messagehere"`
-
-
 
 ### Reset database
 `alembic downgrade base`
