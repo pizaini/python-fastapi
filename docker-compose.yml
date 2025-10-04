@@ -1,7 +1,7 @@
 services:
-  graduation:
-    image: graduation
-    container_name: graduation
+  python-fastapi:
+    image: python-fastapi
+    container_name: python-fastapi
     env_file:
       - .env.example
     ports:
@@ -9,13 +9,11 @@ services:
     environment:
       - TZ=Asia/Jakarta
     networks:
-      - apisix
+      - python-fastapi
       - db-server
-#    volumes:
-#      - .:/app
     restart: unless-stopped
 networks:
-  apisix:
+  python-fastapi:
     external: true
   db-server:
     external: true
