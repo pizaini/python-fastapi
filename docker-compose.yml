@@ -1,0 +1,21 @@
+services:
+  graduation:
+    image: graduation
+    container_name: graduation
+    env_file:
+      - .env.example
+    ports:
+      - "8000:8000"
+    environment:
+      - TZ=Asia/Jakarta
+    networks:
+      - apisix
+      - db-server
+#    volumes:
+#      - .:/app
+    restart: unless-stopped
+networks:
+  apisix:
+    external: true
+  db-server:
+    external: true
