@@ -1,22 +1,10 @@
 # Python with FastAPI
 Python with FastAPI simple example
 
-# Clone this project
+## Clone this project
 Clone this project using your text editor
 
-# Init project
-`python -m venv .venv`
-
-## VENV
-For Mac 
-
-`source .venv/bin/act# Python with FastAPI
-Python with FastAPI simple example
-
-# Clone this project
-Clone this project using your text editor
-
-# Init project
+## Init project
 `python -m venv .venv`
 
 ## VENV
